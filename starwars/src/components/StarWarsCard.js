@@ -22,13 +22,12 @@ const StarCardP = styled.p `
 `;
 
 const StarWarsCard = (props) => {
-    const {name, gender, haircolor, height} = props;
+    const {name, gender, height} = props;
     return (
         <StarCard>
             <StarCardH2>{name}</StarCardH2>
-            <StarCardP>{gender}</StarCardP>
-            <StarCardP>{haircolor}</StarCardP>
-            <StarCardP>{height}</StarCardP>
+            <StarCardP>{`gender: ${gender}`}</StarCardP>
+            <StarCardP>{`height: ${height}`}</StarCardP>
         </StarCard>
     )
 }

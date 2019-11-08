@@ -35,7 +35,6 @@ const StarWars = () => {
             key={index}
             name={person.name}
             gender={person.gender}
-            haircolor={person.haircolor}
             height={person.height}
           />
         );
