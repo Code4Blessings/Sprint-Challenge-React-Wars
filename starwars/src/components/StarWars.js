@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import StarWarsCard from "./StarWarsCard";
+import styled from "styled-components";
 
 
-
+const StarWarsCast = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+`;
 
 const StarWars = () => {
 
@@ -23,7 +28,7 @@ const StarWars = () => {
     },[])
     
     return (
-      <div className="starWars-cast">
+      <StarWarsCast>
         {people.map((person, index) => {
         return (
           <StarWarsCard
@@ -35,7 +40,7 @@ const StarWars = () => {
           />
         );
       })}
-      </div>
+      </StarWarsCast>
       
     
 
